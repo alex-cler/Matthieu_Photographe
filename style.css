@@ -1,5 +1,6 @@
 :root {
     --bg-header: #171717;
+    --blue: #63A0D4;
     --white: #FFFFFF;
 }
 
@@ -17,18 +18,32 @@
 }
 
 body {
-    color: var(--white);
+    font-family: 'Poppins', sans-serif;
 }
 
 header {
     background-color: var(--bg-header);
+    color: var(--white);
     width: 100vw;
     height: 100vh;
+}
+
+header p {
+    width: 40vw;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 400;
 }
 
 article {
     width: 100vw;
     height: 100vh;
+}
+
+article p {
+    width: 40vw;
 }
 
 a {
@@ -39,4 +54,26 @@ a {
 
 nav li {
     display: inline;
+}
+
+span {
+    color: var(--blue);
+    opacity: 0.75;
+    filter: saturate(120%);
+    font-size: 8em;
+    position: relative;
+    top: 0;
+    right: 0.25em;
+}
+
+h4 {
+    font-style: italic;
+    font-weight: 200;
+}
+
+.gallery {
+    width: 80vw;
+    display: grid;
+    grid-template: repeat(3, 1fr);
+    grid-gap: 2em;
 }
