@@ -2,6 +2,8 @@
     --bg-header: #171717;
     --blue: #63A0D4;
     --white: #FFFFFF;
+    --fs-xl: clamp(3.5rem, 25vw, 12rem);
+
 }
 
 /* Resetting CSS */
@@ -33,7 +35,7 @@ header p {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: var(--fs-xl);
     font-weight: 400;
 }
 
