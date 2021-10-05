@@ -1,0 +1,150 @@
+:root {
+    --bg-header: #171717;
+    --blue: #63A0D4;
+    --white: #FFFFFF;
+    --fs-xl: clamp(3.5rem, 25vw, 12rem);
+
+}
+
+/* Resetting CSS */
+* {
+    border: 0;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: var(--bg-header);
+    color: var(--white);
+    width: 100vw;
+    height: 100vh;
+}
+
+header p {
+    width: 40vw;
+}
+
+h1 {
+    font-size: var(--fs-xl);
+    font-weight: 400;
+}
+
+article {
+    width: 100vw;
+    height: 100vh;
+}
+
+article p {
+    width: 40vw;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none; 
+    mix-blend-mode: difference;
+}
+
+nav li {
+    display: inline;
+}
+
+span {
+    color: var(--blue);
+    opacity: 0.75;
+    filter: saturate(120%);
+    font-size: 8em;
+    position: relative;
+    top: 0;
+    right: 0.25em;
+}
+
+h4 {
+    font-style: italic;
+    font-weight: 200;
+}
+
+.gallery {
+    width: 80vw;
+    display: grid;
+    grid-template: repeat(3, 1fr);
+    grid-gap: 2em;
+}
+
+/* Button */
+
+button {
+    -webkit-transition-duration: 0.1s; /* Safari */
+    transition-duration: 0.1s;
+    background-color: #F4595B;
+    border-radius: 8px;
+    border-bottom: 4px solid #C24648;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Oxygen', sans-serif;
+    letter-spacing: 2px;
+  }
+  
+  button:hover {
+    background-color: #FF7375;
+    border: none;
+    border-radius: 8px;
+    border-bottom: 4px solid #C24648;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Oxygen', sans-serif;
+    letter-spacing: 2px;
+  }
+  
+  button:active {
+    background-color: #C24648;
+    border: none;
+    border-radius: 8px;
+    border-bottom: 4px solid #C24648;
+    color: #CCC;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Oxygen', sans-serif;
+    letter-spacing: 2px;
+  }
+
+  #app {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding-top: 10px;
+  }
+  
+  #app div {
+    width: 100%;
+  }
+  
+  #app div div {
+    height: 100%;
+  }
+  
+  #app div div div {
+    position: relative;
+    height: auto;
+  }
+  
